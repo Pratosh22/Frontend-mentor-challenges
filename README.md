@@ -9,3 +9,6 @@ https://pratosh22-huddle-landing-page.netlify.app/
 
 <h1>Fylo Landing Page</h1>
 https://pratosh22-fylo-landing-page.netlify.app/
+
+  <h1>Stats Preview Card Component</h1>
+  https://pratosh22-stats-preview-card-page.netlify.app/
