@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+}
+h1,h2,h3,h4,h5{
+    font-family:"Inter";
+}
+p{
+    font-family:Lexend Deca;
+    font-weight: 400;
+    font-size: 15px;
+}
+.small-container{
+    border-radius: 10px;
+    width:1100px;
+    height:500px;
+    color: white;
+    background-color:hsl(244, 38%, 16%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.image{
+    width:100%;
+    height: 100%;
+    background-image: url(../images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: hsl(277, 64%, 61%);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.left-part{
+    display:flex;
+    flex-direction: column;
+    margin:5rem;
+}
+span{
+    color:hsl(277, 64%, 61%);
+}
+.left-part h1{
+    width:80%;
+}
+.left-part p{
+    line-height: 1.6;
+    width:86%;
+    padding:2rem 0;
+    color:hsla(0, 0%, 100%, 0.75);
+}
+ul{
+    list-style:none;
+    display:flex;
+}
+ul li{
+    margin:1rem 3rem 0 0;
+}
+
+.left-part ul li p{
+    padding: 0.5rem 0 0 0;
+    font-size:13px;
+}
+.attribution{
+    line-height: 1.5;
+    padding-top:2rem;
+    color:white;
+}
+@media screen and (max-width:1020px){
+    .image{
+        height: 400px;
+        background-image: url(../images/image-header-mobile.jpg);
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0;
+    }
+   .small-container{
+       width:330px;
+       height:780px;
+       flex-direction: column-reverse;
+    }
+    .left-part{
+        height:470px;
+        margin-top:1rem;
+        text-align: center;
+        width:100%;
+    }
+    .left-part h1{
+        padding:0 1rem;
+        width:100%;
+    }
+    .left-part p{
+        padding:1rem 2rem;
+        width:100%;
+    }
+    ul{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width:100%;
+    }
+    ul li{
+        margin:1rem 0;   
+    }
+    .attribution{
+        padding-top:1rem;
+    }
+}
